@@ -1,0 +1,12 @@
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Model\bin\Debug\Ulatina.PrograAvanzada.AW.Model.dll.config
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Model\bin\Debug\Ulatina.PrograAvanzada.AW.Model.dll
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Model\bin\Debug\Ulatina.PrograAvanzada.AW.Model.pdb
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Model\bin\Debug\EntityFramework.dll
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Model\bin\Debug\EntityFramework.xml
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Model\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Model\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Model\obj\Debug\Ulatina.PrograAvanzada.AW.Model.dll
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Model\obj\Debug\Ulatina.PrograAvanzada.AW.Model.pdb
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Model\obj\Debug\Ulatina.PrograAvanzada.AW.Model.csprojResolveAssemblyReference.cache

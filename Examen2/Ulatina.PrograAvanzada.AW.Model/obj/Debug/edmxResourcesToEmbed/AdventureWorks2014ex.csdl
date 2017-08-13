@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AdventureWorks2014Modelex" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="BusinessEntityID" />
+    </Key>
+    <Property Name="BusinessEntityID" Type="Int32" Nullable="false" />
+    <Property Name="NationalIDNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LoginID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OrganizationLevel" Type="Int16" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="JobTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="MaritalStatus" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="1" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="HireDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SalariedFlag" Type="Boolean" Nullable="false" />
+    <Property Name="VacationHours" Type="Int16" Nullable="false" />
+    <Property Name="SickLeaveHours" Type="Int16" Nullable="false" />
+    <Property Name="CurrentFlag" Type="Boolean" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Person" Relationship="Self.FK_Employee_Person_BusinessEntityID" FromRole="Employee" ToRole="Person" />
+    <NavigationProperty Name="SalesPerson" Relationship="Self.FK_SalesPerson_Employee_BusinessEntityID" FromRole="Employee" ToRole="SalesPerson" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="BusinessEntityID" />
+    </Key>
+    <Property Name="BusinessEntityID" Type="Int32" Nullable="false" />
+    <Property Name="PersonType" Type="String" MaxLength="2" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="NameStyle" Type="Boolean" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Suffix" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="EmailPromotion" Type="Int32" Nullable="false" />
+    <Property Name="AdditionalContactInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Demographics" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK_Employee_Person_BusinessEntityID" FromRole="Person" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="SalesOrderDetail">
+    <Key>
+      <PropertyRef Name="SalesOrderID" />
+      <PropertyRef Name="SalesOrderDetailID" />
+    </Key>
+    <Property Name="SalesOrderID" Type="Int32" Nullable="false" />
+    <Property Name="SalesOrderDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CarrierTrackingNumber" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="OrderQty" Type="Int16" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="SpecialOfferID" Type="Int32" Nullable="false" />
+    <Property Name="UnitPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="UnitPriceDiscount" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="LineTotal" Type="Decimal" Precision="38" Scale="6" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="SalesOrderHeader" Relationship="Self.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" FromRole="SalesOrderDetail" ToRole="SalesOrderHeader" />
+  </EntityType>
+  <EntityType Name="SalesOrderHeader">
+    <Key>
+      <PropertyRef Name="SalesOrderID" />
+    </Key>
+    <Property Name="SalesOrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RevisionNumber" Type="Byte" Nullable="false" />
+    <Property Name="OrderDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DueDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ShipDate" Type="DateTime" Precision="3" />
+    <Property Name="Status" Type="Byte" Nullable="false" />
+    <Property Name="OnlineOrderFlag" Type="Boolean" Nullable="false" />
+    <Property Name="SalesOrderNumber" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="PurchaseOrderNumber" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="AccountNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <Property Name="SalesPersonID" Type="Int32" />
+    <Property Name="TerritoryID" Type="Int32" />
+    <Property Name="BillToAddressID" Type="Int32" Nullable="false" />
+    <Property Name="ShipToAddressID" Type="Int32" Nullable="false" />
+    <Property Name="ShipMethodID" Type="Int32" Nullable="false" />
+    <Property Name="CreditCardID" Type="Int32" />
+    <Property Name="CreditCardApprovalCode" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CurrencyRateID" Type="Int32" />
+    <Property Name="SubTotal" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="TaxAmt" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Freight" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="TotalDue" Type="Decimal" Precision="19" Scale="4" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Comment" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="SalesOrderDetail" Relationship="Self.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" FromRole="SalesOrderHeader" ToRole="SalesOrderDetail" />
+    <NavigationProperty Name="SalesPerson" Relationship="Self.FK_SalesOrderHeader_SalesPerson_SalesPersonID" FromRole="SalesOrderHeader" ToRole="SalesPerson" />
+  </EntityType>
+  <EntityType Name="SalesPerson">
+    <Key>
+      <PropertyRef Name="BusinessEntityID" />
+    </Key>
+    <Property Name="BusinessEntityID" Type="Int32" Nullable="false" />
+    <Property Name="TerritoryID" Type="Int32" />
+    <Property Name="SalesQuota" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Bonus" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="CommissionPct" Type="Decimal" Precision="10" Scale="4" Nullable="false" />
+    <Property Name="SalesYTD" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="SalesLastYear" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK_SalesPerson_Employee_BusinessEntityID" FromRole="SalesPerson" ToRole="Employee" />
+    <NavigationProperty Name="SalesOrderHeader" Relationship="Self.FK_SalesOrderHeader_SalesPerson_SalesPersonID" FromRole="SalesPerson" ToRole="SalesOrderHeader" />
+  </EntityType>
+  <Association Name="FK_Employee_Person_BusinessEntityID">
+    <End Role="Person" Type="Self.Person" Multiplicity="1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="BusinessEntityID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="BusinessEntityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesPerson_Employee_BusinessEntityID">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="SalesPerson" Type="Self.SalesPerson" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="BusinessEntityID" />
+      </Principal>
+      <Dependent Role="SalesPerson">
+        <PropertyRef Name="BusinessEntityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID">
+    <End Role="SalesOrderHeader" Type="Self.SalesOrderHeader" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SalesOrderDetail" Type="Self.SalesOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesOrderHeader">
+        <PropertyRef Name="SalesOrderID" />
+      </Principal>
+      <Dependent Role="SalesOrderDetail">
+        <PropertyRef Name="SalesOrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SalesOrderHeader_SalesPerson_SalesPersonID">
+    <End Role="SalesPerson" Type="Self.SalesPerson" Multiplicity="0..1" />
+    <End Role="SalesOrderHeader" Type="Self.SalesOrderHeader" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SalesPerson">
+        <PropertyRef Name="BusinessEntityID" />
+      </Principal>
+      <Dependent Role="SalesOrderHeader">
+        <PropertyRef Name="SalesPersonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AdventureWorks2014Entitiesex" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Employee" EntityType="Self.Employee" />
+    <EntitySet Name="Person" EntityType="Self.Person" />
+    <EntitySet Name="SalesOrderDetail" EntityType="Self.SalesOrderDetail" />
+    <EntitySet Name="SalesOrderHeader" EntityType="Self.SalesOrderHeader" />
+    <EntitySet Name="SalesPerson" EntityType="Self.SalesPerson" />
+    <AssociationSet Name="FK_Employee_Person_BusinessEntityID" Association="Self.FK_Employee_Person_BusinessEntityID">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesPerson_Employee_BusinessEntityID" Association="Self.FK_SalesPerson_Employee_BusinessEntityID">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="SalesPerson" EntitySet="SalesPerson" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID" Association="Self.FK_SalesOrderDetail_SalesOrderHeader_SalesOrderID">
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeader" />
+      <End Role="SalesOrderDetail" EntitySet="SalesOrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SalesOrderHeader_SalesPerson_SalesPersonID" Association="Self.FK_SalesOrderHeader_SalesPerson_SalesPersonID">
+      <End Role="SalesPerson" EntitySet="SalesPerson" />
+      <End Role="SalesOrderHeader" EntitySet="SalesOrderHeader" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

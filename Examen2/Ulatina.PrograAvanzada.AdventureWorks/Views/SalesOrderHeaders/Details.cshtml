@@ -1,0 +1,219 @@
+﻿@model Ulatina.PrograAvanzada.AW.Model.SalesOrderHeader
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SalesOrderHeader</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RevisionNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RevisionNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DueDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DueDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OnlineOrderFlag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OnlineOrderFlag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SalesOrderNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalesOrderNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PurchaseOrderNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PurchaseOrderNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SalesPersonID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalesPersonID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TerritoryID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TerritoryID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BillToAddressID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BillToAddressID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipToAddressID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipToAddressID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipMethodID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipMethodID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCardID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreditCardID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCardApprovalCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreditCardApprovalCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrencyRateID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrencyRateID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubTotal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaxAmt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaxAmt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Freight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Freight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalDue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalDue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.rowguid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rowguid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SalesOrderID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

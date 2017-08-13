@@ -1,0 +1,15 @@
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\bin\Ulatina.PrograAvanzada.AW.Wcf.dll.config
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\bin\Ulatina.PrograAvanzada.AW.Wcf.dll
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\bin\Ulatina.PrograAvanzada.AW.Wcf.pdb
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\bin\EntityFramework.dll
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\bin\EntityFramework.SqlServer.dll
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\bin\Ulatina.PrograAvanzada.AW.Model.dll
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\bin\Ulatina.PrograAvanzada.AW.Model.pdb
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\bin\Ulatina.PrograAvanzada.AW.Model.dll.config
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\bin\EntityFramework.xml
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\bin\EntityFramework.SqlServer.xml
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\bin\es\EntityFramework.resources.dll
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\obj\Debug\Ulatina.PrograAvanzada.AW.Wcf.csprojResolveAssemblyReference.cache
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\obj\Debug\Ulatina.PrograAvanzada.AW.Wcf.dll
+C:\Users\Rodolfo\Source\Repos\2017-2-Progra-Avanzada\Ulatina.PrograAvanzada.AdventureWorks\Ulatina.PrograAvanzada.AW.Wcf\obj\Debug\Ulatina.PrograAvanzada.AW.Wcf.pdb
